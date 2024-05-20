@@ -2,7 +2,7 @@ import 'package:brother88_cafemobile/theme.dart';
 import 'package:flutter/material.dart';
 
 class DetailPesanan extends StatefulWidget {
-  const DetailPesanan({super.key, required int index, required String content});
+  const DetailPesanan({super.key});
 
   @override
   State<DetailPesanan> createState() => _DetailPesananState();
