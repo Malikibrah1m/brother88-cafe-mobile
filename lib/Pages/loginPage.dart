@@ -63,9 +63,10 @@ class _loginPageState extends State<loginPage> {
                         color: whiteColor,
                         borderRadius: BorderRadius.circular(14.0)),
                     child: TextFormField(
+                      keyboardType: TextInputType.emailAddress,
                       style: TextStyle(color: blackColor.withOpacity(0.8)),
                       decoration: InputDecoration(
-                          hintText: 'user123',
+                          hintText: 'Contoh : UserAdmin123',
                           hintStyle: TextStyle(
                               color: textColor,
                               fontWeight: FontWeight.w500,
@@ -92,10 +93,11 @@ class _loginPageState extends State<loginPage> {
                         color: whiteColor,
                         borderRadius: BorderRadius.circular(14.0)),
                     child: TextFormField(
+                      keyboardType: TextInputType.visiblePassword,
                       obscureText: !passwordVisible,
                       style: TextStyle(color: blackColor.withOpacity(0.8)),
                       decoration: InputDecoration(
-                          hintText: 'Password',
+                          hintText: 'Masukkan Password',
                           hintStyle: TextStyle(
                               color: textColor,
                               fontWeight: FontWeight.w500,
@@ -128,11 +130,14 @@ class _loginPageState extends State<loginPage> {
                             ),
                             (route) => false);
                       },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: brownLight.withOpacity(0.9),
+                      ),
                       child: Text(
                         "Login",
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 15,
+                            fontSize: 17,
                             color: whiteColor),
                       ),
                     ),
